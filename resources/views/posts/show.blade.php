@@ -4,8 +4,9 @@
 
 <div class="col-md-12">
         	
-             <h2>Title</h2>
-             <p>postes 5 hrs ago </p>
+             <h2>{{ $post->title }}</h2>
+             <p>{{ $post->description }}</p>
+             <p>{{ $post->created_at->diffForHumans() }}</p>
 
            </div>
 
